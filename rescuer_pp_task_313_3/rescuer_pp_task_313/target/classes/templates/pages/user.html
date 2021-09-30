@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>admin page</title>
+    <link rel="stylesheet" href="../../static/js/style.css">
+</head>
+<body>
+<header class="p-1 bg-dark text-white">
+    <nav class="container d-flex align-items-center justify-content-between">
+        <p class="text-white mb-0"><span id="user-detail"></span></p>
+        <button id="logout" class="nav-link text-white">Logout</button>
+    </nav>
+</header>
+<div id="userpage" class="d-flex flex-column  bg-light"
+     style="min-height: calc(100vh - 48px);">
+    <h1>User information-page</h1>
+    <div id="users1" class="">
+        <h2>About user</h2>
+        <table class="table" style="background: #FFF;border-radius: 4px;">
+            <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Email</th>
+                <th scope="col">Role</th>
+            </tr>
+            </thead>
+            <tbody id="current-user-table-body">
+            <tr>
+                <td>ID</td>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Age</td>
+                <td>Email</td>
+                <td>Role</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="../../static/js/user.js"></script>
+</div>
+</body>
+</html>
